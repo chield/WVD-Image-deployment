@@ -67,7 +67,7 @@
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "Prep",
-                        "scriptUri": "https://raw.githubusercontent.com/chield/Templates/main/WVD-Build-Images-with-AIB/AppInstallScripts/Prep.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/Prep.ps1"
                     },
                     {
                         "type": "PowerShell",
