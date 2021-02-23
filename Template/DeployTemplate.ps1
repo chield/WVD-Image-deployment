@@ -14,8 +14,8 @@ $identityName = 'WVDAIBIdentity402021'
 $sigGalleryName = "WVDImageGalleryAIB"
 
 #image definition 'name'
-$destPublisher = 'Developer'
-$destOffer = 'en-GB'
+$destPublisher = 'WVD-Acceptatie'
+$destOffer = 'nl-NL'
 
 #Image definition version
 $version = '1.0.0'
@@ -23,7 +23,7 @@ $version = '1.0.0'
 #Staging VM size
 $vmSize = 'Standard_D2_v2'
 
-. Template\Get-AzureImageInfo.ps1
+. Scripts\Get-AzureImageInfo.ps1
 $info = Get-AzureImageInfo -Location $location
 
 $Sku = $info.sku

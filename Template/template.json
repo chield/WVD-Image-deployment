@@ -74,14 +74,14 @@
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "OutputTest1",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/OutputTest1.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/OutputTest1.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "OutputTest2",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/OutputTest2.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/OutputTest2.ps1"
                     },
                     {
                         "type": "PowerShell",
@@ -99,35 +99,35 @@
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "Powershell",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/Powershell.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/Powershell.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "GitForWindows",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/GitForWindows.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/GitForWindows.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "VSCode",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/VSCode.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/VSCode.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "FSLogix",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/FSLogix.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/FSLogix.ps1"
                     },
                     {
                         "type": "PowerShell",
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "Teams",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/Teams.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/Teams.ps1"
                     },
                     {
                         "type": "WindowsRestart",
@@ -148,7 +148,7 @@
                         "runAsSystem": true,
                         "runElevated": true,
                         "name": "BIS-F",
-                        "scriptUri": "https://raw.githubusercontent.com/JimMoyle/YouTube-WVD-Image-Deployment/main/E4/AppInstallScripts/BISF.ps1"
+                        "scriptUri": "https://raw.githubusercontent.com/chield/WVD-Image-deployment/main/AppInstallScripts/BISF.ps1"
                     },
                     {
                         "type": "WindowsRestart",
@@ -159,8 +159,8 @@
                 "distribute": [
                     {
                         "artifactTags": {
-                            "Project": "YouTube",
-                            "Author": "Jim Moyle"
+                            "Project": "WVD Demo",
+                            "Author": "Delta-N"
                         },
                         "excludeFromLatest": false,
                         "galleryImageId": "[variables('imageDefStr')]",
