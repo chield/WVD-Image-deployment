@@ -7,7 +7,8 @@ $subscriptionID = (Get-AzContext).Subscription.Id
 $imageResourceGroup = 'rg-weu-aib'
 
 #Install AIB Pre-Release Modules
-'Az.ImageBuilder', 'Az.ManagedServiceIdentity' | ForEach-Object { Install-Module -Name $_ -AllowPrerelease }
+Install-module 'Az.Imagebuilder'
+Install-module 'Az.ManagedServiceIdentity'
 
 #Custom Azure Marketplace image verification function (find in E1)
 . .\Scripts\Get-AzureImageInfo.ps1
@@ -19,7 +20,6 @@ Get-AzResourceProvider -ProviderNamespace Microsoft.Compute, Microsoft.KeyVault,
     Where-Object RegistrationState -ne Registered |
     Register-AzResourceProvider
 
-
 #Create a resource group
 New-AzResourceGroup -Name $imageResourceGroup -Location $location
 
@@ -29,15 +29,15 @@ New-AzResourceGroup -Name $imageResourceGroup -Location $location
 
 #Create variables for the role definition and identity names. These values must be unique.
 $randomNum = Get-Random -Minimum 100000 -Maximum 999999
-$imageRoleDefName = 'Azure4All Azure Image Builder Service Image Creation Role' + $randomNum
-$identityName = "Azure4AllAIBIdentity" + $randomNum
+$imageRoleDefName = 'WVD Azure Image Builder Service Image Creation Role' + $randomNum
+$identityName = "WVDAIBIdentity" + $randomNum
 
 #Create a user identity.
 New-AzUserAssignedIdentity -ResourceGroupName $imageResourceGroup -Name $identityName
 
 #Store the identity resource and principal IDs in variables.
 $identity = Get-AzUserAssignedIdentity -ResourceGroupName $imageResourceGroup -Name $identityName
-Set-Content E2\TempFiles\identityNameId.txt $identity.Id
+Set-Content Temp\identityNameId.txt $identity.Id
 $identityNamePrincipalId = $identity.PrincipalId
 
 #Assign permissions for identity to distribute images
@@ -70,6 +70,6 @@ New-AzRoleAssignment @RoleAssignParams
 #Create a Shared Image Gallery
 #Create the gallery.
 
-$myGalleryName = 'Azure4AllImageGalleryAIB'
+$myGalleryName = 'WVDImageGalleryAIB'
 
 New-AzGallery -GalleryName $myGalleryName -ResourceGroupName $imageResourceGroup -Location $location

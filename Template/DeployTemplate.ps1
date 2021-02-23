@@ -8,10 +8,10 @@ $location = "westeurope"
 $imageResourceGroup = 'rg-weu-aib'
 
 # Managed Identity Name
-$identityName = 'AIBIdentity465575'
+$identityName = 'WVDAIBIdentity402021'
 
 # Image gallery name
-$sigGalleryName = "Azure4AllImageGalleryAIB"
+$sigGalleryName = "WVDImageGalleryAIB"
 
 #image definition 'name'
 $destPublisher = 'Developer'
