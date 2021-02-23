@@ -1,3 +1,4 @@
+
 # Path to template
 $templateFilePath = ".\Template\template.json"
 
@@ -14,11 +15,11 @@ $identityName = 'WVDAIBIdentity402021'
 $sigGalleryName = "WVDImageGalleryAIB"
 
 #image definition 'name'
-$destPublisher = 'WVD-Acceptatie'
+$destPublisher = 'Finance'
 $destOffer = 'en-GB'
 
 #Image definition version
-$version = '1.1.0'
+$version = '1.3.2'
 
 #Staging VM size
 $vmSize = 'Standard_D2_v2'

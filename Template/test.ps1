@@ -1,7 +1,7 @@
 #Create a gallery definition.
 $imageResourceGroup = 'rg-weu-aib'
 $location = 'westeurope'
-$imageDefName = 'WVDImageForSIG'
+$imageDefName = 'WVDImageForDemo'
 $myGalleryName = 'WVDImageGalleryAIB'
 $imageTemplateName = 'WVDWin10Image'
 $runOutputName = 'WVDDistResults'
@@ -55,7 +55,7 @@ $Customizer = New-AzImageBuilderCustomizerObject @ImgCustomParams
 
 $disObjParams = @{
     SharedImageDistributor = $true
-    ArtifactTag            = @{tag = 'Jim-Share' }
+    ArtifactTag            = @{tag = 'AIB Demo' }
     GalleryImageId         = $imageDef.Id
     ReplicationRegion      = $location
     RunOutputName          = $runOutputName
