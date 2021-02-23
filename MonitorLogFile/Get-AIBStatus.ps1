@@ -6,7 +6,7 @@ Param (
         ValuefromPipelineByPropertyName = $true,
         ValuefromPipeline = $true
     )]
-    [System.String]$ResourceGruopName = 'YTAzureImageBuilderRG',
+    [System.String]$ResourceGroupName = 'rg-weu-aib',
     [Parameter(
         Position = 0,
         ValuefromPipelineByPropertyName = $true,

@@ -23,7 +23,7 @@ $version = '1.0.0'
 #Staging VM size
 $vmSize = 'Standard_D2_v2'
 
-.\Get-AzureImageInfo.ps1
+. Template\Get-AzureImageInfo.ps1
 $info = Get-AzureImageInfo -Location $location
 
 $Sku = $info.sku
