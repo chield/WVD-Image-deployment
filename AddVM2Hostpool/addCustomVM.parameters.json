@@ -1,0 +1,135 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "nestedTemplatesLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
+        },
+        "artifactsLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+        },
+        "hostpoolName": {
+            "value": "WVD4All-Acceptatie"
+        },
+        "hostpoolToken": {
+            "value": ""
+        },
+        "hostpoolResourceGroup": {
+            "value": "rg-weu-devops"
+        },
+        "hostpoolLocation": {
+            "value": "westeurope"
+        },
+        "hostpoolProperties": {
+            "value": {}
+        },
+        "vmTemplate": {
+            "value": ""
+        },
+        "administratorAccountUsername": {
+            "value": "adminVMHP@wvd4all.com"
+        },
+        "administratorAccountPassword": {
+            "value": "Rijswijk2286Gg"
+        },
+        "vmAdministratorAccountUsername": {
+            "value": "adminVM"
+        },
+        "vmAdministratorAccountPassword": {
+            "value": "WWisgeheim2021"
+        },
+        "createAvailabilitySet": {
+            "value": true
+        },
+        "vmResourceGroup": {
+            "value": "rg-weu-devops"
+        },
+        "vmLocation": {
+            "value": "westeurope"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "vmInitialNumber": {
+            "value": 2
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmNamePrefix": {
+            "value": "WVD-ACCEP"
+        },
+        "vmImageType": {
+            "value": ""
+        },
+        "vmGalleryImageOffer": {
+            "value": ""
+        },
+        "vmGalleryImagePublisher": {
+            "value": ""
+        },
+        "vmGalleryImageSKU": {
+            "value": ""
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-aib/providers/Microsoft.Compute/galleries/WVDImageGalleryAIB/images/WVD-Acceptatie.en-GB.20h2-evd-o365pp"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "storageAccountResourceGroupName": {
+            "value": "rg-weu-devops"
+        },
+        "existingVnetName": {
+            "value": "rg-wvd-dc-vnet"
+        },
+        "existingSubnetName": {
+            "value": "wvd"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "rg-wvd-dc"
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "networkSecurityGroupId": {
+            "value": ""
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "deploymentId": {
+            "value": ""
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "ouPath": {
+            "value": "OU=WVD-Acceptatie,DC=wvd4all,DC=com"
+        },
+        "domain": {
+            "value": "wvd4all.com"
+        }
+    }
+}
