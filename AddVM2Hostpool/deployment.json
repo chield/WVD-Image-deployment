@@ -1,0 +1,283 @@
+{
+  "id": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.Resources/deployments/AddVMsToHostPool-d3920fd6-a780-4da7-b782-fc3eb1c59033-deployment",
+  "name": "AddVMsToHostPool-d3920fd6-a780-4da7-b782-fc3eb1c59033-deployment",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.DesktopVirtualization/hostpools/WVD4All-Acceptatie",
+    "marketplaceItemId": "Microsoft.Hostpool-ARM",
+    "provisioningHash": "d3920fd6-a780-4da7-b782-fc3eb1c59033"
+  },
+  "properties": {
+    "templateLink": {
+      "uri": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.22-preview/AddVirtualMachinesTemplate.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "templateHash": "6339931645135652400",
+    "parameters": {
+      "nestedTemplatesLocation": {
+        "type": "String",
+        "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.22-preview/"
+      },
+      "artifactsLocation": {
+        "type": "String",
+        "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_1-25-2021.zip"
+      },
+      "hostpoolName": {
+        "type": "String",
+        "value": "WVD4All-Acceptatie"
+      },
+      "hostpoolToken": {
+        "type": "SecureString"
+      },
+      "hostpoolResourceGroup": {
+        "type": "String",
+        "value": "rg-weu-wvd-hostpool"
+      },
+      "hostpoolLocation": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "hostpoolProperties": {
+        "type": "Object",
+        "value": {
+          "friendlyName": null,
+          "description": "Created through the WVD extension",
+          "hostPoolType": "Pooled",
+          "personalDesktopAssignmentType": null,
+          "applicationGroupReferences": [
+            "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourcegroups/rg-weu-wvd-hostpool/providers/Microsoft.DesktopVirtualization/applicationgroups/WVD4All-Acceptatie-DAG"
+          ],
+          "customRdpProperty": "",
+          "maxSessionLimit": 15,
+          "loadBalancerType": "BreadthFirst",
+          "validationEnvironment": false,
+          "ring": null,
+          "registrationInfo": {
+            "expirationTime": "2021-02-26T23:00:00Z",
+            "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkU3MDE1QTU5NzU5N0Y3RDg1MjMyRTRBOTA3QTU0OTYyNzNBNEIxMjAiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImIwMDc2NWRiLTVhNGMtNDRkOS1hMDExLTk4YmE3NDdhNDY3YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy1ldS1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLWV1LXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNmQ1YTVmMWYtY2Y2YS00MGU0LTk3NDktYTg5ZTQyOTMyOGY1IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJFVSIsIm5iZiI6MTYxNDM0MzAyOCwiZXhwIjoxNjE0MzgwNDAwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.gREklZwv597aZHrInylg3fQUvw637GIhUvqg575sRStfcOCXMbaXpVl30RUnra9fDBpsFkPYKPt3sY0hq09yh0fGTR23lCli_1WDwg3HGPfCxjwWaOhzL7UJ84yULr4Kfd7qPWt2GUcJZ1PzxHqd94gd5yLlh2SpGOGy0Heu6I82Crhok4agVKw0PNVTClVL7ZKPd5uD-k6TBsBj6Snl6Twc2j59evbB2JU6hoz0DnCX9YuWotPyvGlY_e1RrMn4tM1JirqFGIGvgoSsW2wN9SeHZPxhEqjqyG_ym-YquYECAE9zU76SnJ64MNkuD45g6I8PbKIJ5XfzWN4Rv4ofVA",
+            "resetToken": false,
+            "registrationTokenOperation": "None"
+          },
+          "vmTemplate": "{\"domain\":\"wvd4all.com\",\"galleryImageOffer\":null,\"galleryImagePublisher\":null,\"galleryImageSKU\":null,\"imageType\":\"CustomImage\",\"imageUri\":null,\"customImageId\":\"/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-aib/providers/Microsoft.Compute/galleries/WVDImageGalleryAIB/images/WVD-Acceptatie.en-GB.20h2-evd-o365pp\",\"namePrefix\":\"WVD-ACCEP\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":null}",
+          "preferredAppGroupType": "Desktop",
+          "migrationRequest": null,
+          "cloudPcResource": false,
+          "startVMOnConnect": false,
+          "ssoadfsAuthority": null,
+          "ssoClientId": null,
+          "ssoClientSecretKeyVaultPath": null,
+          "ssoSecretType": null,
+          "objectId": "6d5a5f1f-cf6a-40e4-9749-a89e429328f5"
+        }
+      },
+      "vmTemplate": {
+        "type": "String",
+        "value": ""
+      },
+      "administratorAccountUsername": {
+        "type": "String",
+        "value": "adminVMHP@wvd4all.com"
+      },
+      "administratorAccountPassword": {
+        "type": "SecureString"
+      },
+      "vmAdministratorAccountUsername": {
+        "type": "String",
+        "value": "adminVM"
+      },
+      "vmAdministratorAccountPassword": {
+        "type": "SecureString"
+      },
+      "createAvailabilitySet": {
+        "type": "Bool",
+        "value": true
+      },
+      "vmResourceGroup": {
+        "type": "String",
+        "value": "rg-weu-wvd-hostpool"
+      },
+      "vmLocation": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "vmSize": {
+        "type": "String",
+        "value": "Standard_D2s_v3"
+      },
+      "vmInitialNumber": {
+        "type": "Int",
+        "value": 0
+      },
+      "vmNumberOfInstances": {
+        "type": "Int",
+        "value": 1
+      },
+      "vmNamePrefix": {
+        "type": "String",
+        "value": "WVD-ACCEP"
+      },
+      "vmImageType": {
+        "type": "String",
+        "value": "CustomImage"
+      },
+      "vmGalleryImageOffer": {
+        "type": "String",
+        "value": ""
+      },
+      "vmGalleryImagePublisher": {
+        "type": "String",
+        "value": ""
+      },
+      "vmGalleryImageSKU": {
+        "type": "String",
+        "value": ""
+      },
+      "vmImageVhdUri": {
+        "type": "String",
+        "value": ""
+      },
+      "vmCustomImageSourceId": {
+        "type": "String",
+        "value": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-aib/providers/Microsoft.Compute/galleries/WVDImageGalleryAIB/images/WVD-Acceptatie.en-GB.20h2-evd-o365pp"
+      },
+      "vmDiskType": {
+        "type": "String",
+        "value": "StandardSSD_LRS"
+      },
+      "vmUseManagedDisks": {
+        "type": "Bool",
+        "value": true
+      },
+      "storageAccountResourceGroupName": {
+        "type": "String",
+        "value": ""
+      },
+      "existingVnetName": {
+        "type": "String",
+        "value": "rg-wvd-dc-vnet"
+      },
+      "existingSubnetName": {
+        "type": "String",
+        "value": "wvd"
+      },
+      "virtualNetworkResourceGroupName": {
+        "type": "String",
+        "value": "rg-wvd-dc"
+      },
+      "createNetworkSecurityGroup": {
+        "type": "Bool",
+        "value": false
+      },
+      "networkSecurityGroupId": {
+        "type": "String",
+        "value": ""
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": []
+      },
+      "availabilitySetTags": {
+        "type": "Object",
+        "value": {
+          "WVD-Acceptatie": "1"
+        }
+      },
+      "networkInterfaceTags": {
+        "type": "Object",
+        "value": {
+          "WVD-Acceptatie": "1"
+        }
+      },
+      "networkSecurityGroupTags": {
+        "type": "Object",
+        "value": {
+          "WVD-Acceptatie": "1"
+        }
+      },
+      "virtualMachineTags": {
+        "type": "Object",
+        "value": {
+          "WVD-Acceptatie": "1"
+        }
+      },
+      "imageTags": {
+        "type": "Object",
+        "value": {
+          "WVD-Acceptatie": "1"
+        }
+      },
+      "deploymentId": {
+        "type": "String",
+        "value": "d3920fd6-a780-4da7-b782-fc3eb1c59033"
+      },
+      "apiVersion": {
+        "type": "String",
+        "value": "2019-12-10-preview"
+      },
+      "ouPath": {
+        "type": "String",
+        "value": "OU=WVD-Acceptatie,DC=wvd4all,DC=com"
+      },
+      "domain": {
+        "type": "String",
+        "value": "wvd4all.com"
+      },
+      "aadJoin": {
+        "type": "Bool",
+        "value": false
+      },
+      "intune": {
+        "type": "Bool",
+        "value": false
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2021-02-26T13:00:18.1136933Z",
+    "duration": "PT1.9571519S",
+    "correlationId": "d911179b-7cde-4e6c-8608-6e77c10d4a98",
+    "providers": [
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.Resources/deployments/UpdateHostPool-d3920fd6-a780-4da7-b782-fc3eb1c59033",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "UpdateHostPool-d3920fd6-a780-4da7-b782-fc3eb1c59033"
+          }
+        ],
+        "id": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.Resources/deployments/AVSet-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "AVSet-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.Resources/deployments/AVSet-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "AVSet-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033"
+          }
+        ],
+        "id": "/subscriptions/60793049-d642-4e61-ab84-c16ae308b6ca/resourceGroups/rg-weu-wvd-hostpool/providers/Microsoft.Resources/deployments/vmCreation-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "vmCreation-linkedTemplate-d3920fd6-a780-4da7-b782-fc3eb1c59033"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
