@@ -36,7 +36,7 @@
                 "ring": null,
                 "registrationInfo": {
                     "expirationTime": "2021-02-26T23:00:00Z",
-                    "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkU3MDE1QTU5NzU5N0Y3RDg1MjMyRTRBOTA3QTU0OTYyNzNBNEIxMjAiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImIwMDc2NWRiLTVhNGMtNDRkOS1hMDExLTk4YmE3NDdhNDY3YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy1ldS1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLWV1LXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNmQ1YTVmMWYtY2Y2YS00MGU0LTk3NDktYTg5ZTQyOTMyOGY1IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJFVSIsIm5iZiI6MTYxNDM0MzAyOCwiZXhwIjoxNjE0MzgwNDAwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.gREklZwv597aZHrInylg3fQUvw637GIhUvqg575sRStfcOCXMbaXpVl30RUnra9fDBpsFkPYKPt3sY0hq09yh0fGTR23lCli_1WDwg3HGPfCxjwWaOhzL7UJ84yULr4Kfd7qPWt2GUcJZ1PzxHqd94gd5yLlh2SpGOGy0Heu6I82Crhok4agVKw0PNVTClVL7ZKPd5uD-k6TBsBj6Snl6Twc2j59evbB2JU6hoz0DnCX9YuWotPyvGlY_e1RrMn4tM1JirqFGIGvgoSsW2wN9SeHZPxhEqjqyG_ym-YquYECAE9zU76SnJ64MNkuD45g6I8PbKIJ5XfzWN4Rv4ofVA",
+                    "token": "",
                     "resetToken": false,
                     "registrationTokenOperation": "None"
                 }
@@ -49,13 +49,13 @@
             "value": "adminVMHP@wvd4all.com"
         },
         "administratorAccountPassword": {
-            "value": "Rijswijk2286Gg"
+            "value": ""
         },
         "vmAdministratorAccountUsername": {
             "value": "adminVM"
         },
         "vmAdministratorAccountPassword": {
-            "value": "WWisgeheim2021"
+            "value": ""
         },
         "createAvailabilitySet": {
             "value": true
