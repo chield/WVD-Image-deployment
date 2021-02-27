@@ -7,7 +7,7 @@ import-module az.network
 import-module az.compute
 
 $azureSubscriptionID = "60793049-d642-4e61-ab84-c16ae308b6ca"
-$resourceGroupName = "rg-weu-devops"
+$resourceGroupName = "rg-weu-wvd-hostpool"
 $existingWVDHostPoolName = "WVD4All-Acceptatie"
 
 #Obtain RdsRegistrationInfotoken
